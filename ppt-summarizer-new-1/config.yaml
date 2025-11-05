@@ -1,0 +1,48 @@
+# Application Configuration File
+
+app:
+  name: "PowerPoint Content Summarization"
+  version: "1.0.0"
+  description: "AI-powered PowerPoint slide summarization for financial reports"
+  max_file_size_mb: 5
+  supported_formats:
+    - ".ppt"
+    - ".pptx"
+
+llm:
+  provider: "groq"
+  model_name: "llama-3.1-70b-versatile"
+  temperature: 0.3
+  max_tokens: 1024
+  timeout_seconds: 30
+  max_retries: 3
+  retry_delay_seconds: 2
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "app.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  console_output: true
+  file_output: true
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+ui:
+  page_title: "PowerPoint Summarizer"
+  page_icon: "📊"
+  layout: "wide"
+  sidebar_state: "expanded"
+  theme:
+    primary_color: "#1f77b4"
+    background_color: "#ffffff"
+    secondary_background_color: "#f0f2f6"
+
+extraction:
+  min_table_rows: 2
+  min_table_cols: 2
+  extract_images: false
+  preserve_formatting: true
+
+prompts:
+  template_file: "prompt_template.txt"
+  system_role: "You are a financial analyst expert specializing in loan forecasting and risk assessment."
