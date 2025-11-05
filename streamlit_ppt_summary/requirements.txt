@@ -1,0 +1,7 @@
+streamlit
+python-pptx
+pandas
+pyyaml
+groq
+pytest
+python-dotenv

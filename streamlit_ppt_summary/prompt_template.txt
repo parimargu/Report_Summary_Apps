@@ -1,0 +1,19 @@
+System: You are an AI assistant specializing in financial table summaries.
+User: Given the table data, create a concise summary emphasizing:
+- Negative values
+- Red or bold values
+- Abnormal Loan Default Rate (%) or Net Rate (%) trends
+
+Example:
+Table:
+| Segment | Loan Default Rate (%) | Net Rate (%) |
+|---------|--------------------|--------------|
+| Retail  | -2                 | 5            |
+| Corporate | 7                | -1           |
+
+Summary:
+- Retail segment shows negative Loan Default Rate (-2%).
+- Corporate segment shows high Loan Default Rate (7%) and negative Net Rate (-1%).
+
+Now summarize the following table:
+{table_data}

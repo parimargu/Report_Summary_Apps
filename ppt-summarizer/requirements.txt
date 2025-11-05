@@ -1,0 +1,26 @@
+# Core Dependencies
+streamlit
+python-pptx
+groq
+pyyaml
+python-dotenv
+
+# Data Processing
+pandas
+openpyxl
+
+# Testing
+pytest
+pytest-cov
+pytest-asyncio
+pytest-mock
+
+# Code Quality
+black
+flake8
+mypy
+
+# Logging and Monitoring
+colorlog
+
+tabulate

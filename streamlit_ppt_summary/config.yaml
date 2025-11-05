@@ -1,0 +1,13 @@
+app:
+  name: "PPT Table Summarizer"
+  version: "1.0"
+
+llm:
+  model: "openai/gpt-oss-20b"
+  api_key_env_var: "your_groq_api_key_here"
+  timeout: 30
+  retry_attempts: 3
+
+logging:
+  file: "app.log"
+  level: "INFO"
